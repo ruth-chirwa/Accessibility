@@ -16,12 +16,26 @@
         <h1>HTML/CSS Quiz</h1>
         <nav>
             <ul>
-              <li><a href="#">INFO</a></li>
-              <li><a href="#">HTML</a></li>
-              <li><a href="#">CSS</a></li>
-            </ul>
+                <li><a href="#student-info">INFO</a></li>
+                <li><a href="#html-questions">HTML</a></li>
+                <li><a href="#css-questions">CSS</a></li>
+              </ul>
         </nav>
       </header> 
-    <main></main>
+    <main>
+        <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+            <!--To increase the page accessibility, the role attribute can be used to indicate the purpose behind an element on the page to assistive technologies. 
+                The role attribute is a part of the Web Accessibility Initiative (WAI), and accepts preset values.-->
+                <section role="region" aria-labelledby="student-info">
+                    <h2 id="student-info"> Name</h2>
+                  </section>
+                  <section role="region" aria-labelledby="html-questions">
+                    <h2 id="html-questions"> What is Html?</h2>
+                  </section>
+                  <section role="region" aria-labelledby="css-questions">
+                    <h2 id="css-questions"> What do you understand about "CSS"?</h2>
+                  </section>
+                </form>
+    </main>
 </body>
 </html>

@@ -31,21 +31,71 @@
           <div class="info">
             <!--t is important to link each input to the corresponding label element. This provides 
                 assistive technology users with a visual reference to the input.-->
-            <label></label>
-            <input />
-          </div>
-          <div class="info">
-            <label></label>
-            <input />
-          </div>
-          <div class="info">
-            <label></label>
-            <input />
-          </div>
-        </section>
+                <label for="student-name">Name:</label>
+                <input id="student-name" type="text" placeholder="Student name" name="one"/>
+              </div>
+              <div class="info">
+                <label for="student-email">Email:</label>
+                <input id="student-email" type="email" name="two"/>
+              </div>
+              <div class="info">
+                <label for="birth-date">D.O.B.<span class="sr-only">(Date of Birth)</span></label>
+            <input type="date" name="three" id="birth-date" />
+              </div>
+            </section>
                   <section role="region" aria-labelledby="html-questions">
                     <h2 id="html-questions"> What is Html?</h2>
-                  </section>
+                    <div class="question-block">
+                        <p>1</p>
+                        <fieldset class="question" name="question-one">
+                            <legend>Html is a markup language</legend>
+                            <ul class="answers-list">
+                                <li>
+                                  <label>
+                                    True<input type="radio" id="q1-a1"/>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    False<input type="radio" id="q1-a2"/>
+                                  </label>
+                                </li>
+                              </ul>
+                            </fieldset>
+                          </div>
+                          <div class="question-block">
+                            <p>2</p>
+                            <fieldset class="question" name="html-question-two">
+                              <legend>
+                                A label element nesting an input element is required to have a
+                                for attribute with the same value as the input's id
+                              </legend>
+                              <ul class="answers-list">
+                                <li>
+                                  <label>
+                                    True<input type="radio" id="q2-a1"/>
+                                  </label>
+                                </li>
+                                <li>
+                                  <label>
+                                    False<input type="radio" id="q2-a2"/>
+                                  </label>
+                                </li>
+                              </ul>
+                            </fieldset>
+                         
+                        </div>
+                        <div class="question-block">
+                          <p>2</p>
+                          <fieldset class="question" name="question-two">
+                            <legend>ID attributes can only be used once on each element</legend>
+                            <ul class="answers-list">
+                              <li></li>
+                              <li></li>
+                            </ul>
+                          </fieldset>
+                        </div>
+                      </section>
                   <section role="region" aria-labelledby="css-questions">
                     <h2 id="css-questions"> What do you understand about "CSS"?</h2>
                   </section>
